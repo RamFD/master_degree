@@ -1,0 +1,36 @@
+.php-file-tree {
+	font-family: Georgia;
+	font-size: 12px;
+	letter-spacing: 1px;	line-height: 1.5;
+	overflow-x: scroll;
+	overflow-y: scroll;
+}
+
+	.php-file-tree A {
+		color: #000000;
+		text-decoration: none;
+	}
+	
+	.php-file-tree A:hover {
+		color: #666666;
+	}
+
+	.php-file-tree .open {
+		font-style: italic;
+	}
+	
+	.php-file-tree .closed {
+		font-style: normal;
+	}
+	
+	.php-file-tree .pft-directory {
+		list-style-image: url(images/directory.png);
+	}
+
+	.folder-active {
+		background-color: #c0c0c0;
+	}
+
+	.treeview-folder .treeview-file {
+		word-wrap: normal;
+	}
