@@ -26,7 +26,7 @@ PATH_TO_PROJECTS = папка, созданная в пункте 5
 httpd.conf
 
 DocumentRoot "путь/к/проекту"
-<Directory "путь/к/проекту">
+&lt;Directory "путь/к/проекту"&gt;
     RewriteEngine on
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
@@ -35,25 +35,25 @@ DocumentRoot "путь/к/проекту"
     Options All -Indexes
     AllowOverride All
     Require all granted
-</Directory>
+&lt;/Directory&gt;
 
 
 sites-available/localhost.conf
 
-<VirtualHost *:80>
-        DocumentRoot "путь/к/проекту"
-        ServerName localhost
-        ServerAdmin you@example.com
-        ErrorLog "/путь/к/логам/ошибок"
-        TransferLog "/путь/к/логам/"
+&lt;VirtualHost *:80&gt;
+     DocumentRoot "путь/к/проекту"
+     ServerName localhost
+     ServerAdmin you@example.com
+     ErrorLog "/путь/к/логам/ошибок"
+     TransferLog "/путь/к/логам/"
  
-<Directory />
+&lt;Directory /&gt;
     Options +Indexes +FollowSymLinks +ExecCGI
     AllowOverride All
     Order deny,allow
     Allow from all
 Require all granted
-</Directory>
+&lt;/Directory&gt;
 
 
 
